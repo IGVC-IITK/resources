@@ -1,4 +1,4 @@
-# Test Data and Resources
+# Resources and Test Data
 <p> Test Data is frequently needed to quickly test and modify the algorithms. Simple files like calibration parameters have been kept in this repository while larger files have been hosted on SourceForge and the links are provided. As new data comes in, new links will be added here.</p>
 
 ## Vision Data-sets and Resources
