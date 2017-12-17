@@ -2,9 +2,13 @@
 <p> Test Data is frequently needed to quickly test and modify the algorithms. Simple files like calibration parameters have been kept in this repository while larger files have been hosted on SourceForge and the links are provided. As new data comes in, new links will be added here.</p>
 
 ## Vision/SLAM Data-sets and Resources
-### Genius Calibration Data:
+### Calibration Data:
 * **[genius_cam_calibration_data:](https://github.com/IGVC-IITK/test_data/tree/master/genius_cam_calibration_data)**<br>
-This folder (present in this repository) contains calibration data of genius wide angle camera.
+This folder (present in this repository) contains calibration data of genius wide angle camera.<br>
+* **[razor_calib_data:](https://github.com/IGVC-IITK/resources/tree/master/razor_calib_data)**<br>
+This folder (in this repo) contains calibration data of Razor IMU.<br>
+* **[zed_calib_data:](https://github.com/IGVC-IITK/resources/tree/master/zed_calib_data)**<br>
+This folder (in this repo) contains the calibration data of ZED Stereo camera.
 
 ### Visual Odomtery (ZED Stereo Camera)
 * **[Zed_Test:](https://sourceforge.net/projects/igvc-iitk-data/files/Zed_Test/)**<br>
