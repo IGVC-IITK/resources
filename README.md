@@ -1,7 +1,7 @@
 # Resources and Test Data
 <p> Test Data is frequently needed to quickly test and modify the algorithms. Simple files like calibration parameters have been kept in this repository while larger files have been hosted on SourceForge and the links are provided. As new data comes in, new links will be added here.</p>
 
-## Vision Data-sets and Resources
+## Vision/SLAM Data-sets and Resources
 ### Genius Calibration Data:
 * **[genius_cam_calibration_data:](https://github.com/IGVC-IITK/test_data/tree/master/genius_cam_calibration_data)**<br>
 This folder (present in this repository) contains calibration data of genius wide angle camera.
