@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<robot name="daksh">
+  <material name="red">
+    <color rgba=" 1 0 0 1"/>
+  </material> 
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+<!--  <link name="world"/> -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.535 0.67 0.295"/>
+      </geometry>
+      <origin xyz="-0.0475 0.0 -0.1475"/>
+      <material name="red"/>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.695"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.3475"/>
+      <material name="white"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.0 0.7 0.3"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="zed"/>
+  <link name="lidar_1"/>
+  <link name="lidar_2"/>
+ <!-- <link name="odom" /> 
+  <joint name="world_to_base" type="planar">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0.0 0.0 0.4"/>
+  </joint> -->
+  <joint name="base_to_lidar_1" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_1"/>
+    <origin rpy="0.0 0.0 3.14159" xyz="0.22 0.0 0.0"/>
+  </joint>
+  <joint name="base_to_lidar_2" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_2"/>
+    <origin xyz="-0.38 0.0 0.0"/>
+  </joint>
+  <joint name="base_to_zed" type="fixed">
+    <parent link="base_link"/>
+    <child link="zed"/>
+    <origin xyz="0.0 0.0 0.695"/>
+  </joint>
+  
+  <sensor name="zed_camera" update_rate="20">
+   <parent link="zed"/>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <camera>
+     <image width="640" height="480" hfov="1.5708" format="RGB8" near="0.01" far="5.0"/>
+   </camera>
+ </sensor>
+ 
+ <sensor name="front_lidar" update_rate="20">
+   <parent link="lidar_1"/>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <ray>
+     <horizontal samples="100" resolution="1" min_angle="-1.5708" max_angle="1.5708"/>
+     <vertical samples="1" resolution="1" min_angle="0" max_angle="0"/>
+   </ray>
+ </sensor>
+ 
+  <sensor name="back_lidar" update_rate="20">
+   <parent link="lidar_2"/>
+   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <ray>
+     <horizontal samples="100" resolution="1" min_angle="-1.5708" max_angle="1.5708"/>
+     <vertical samples="1" resolution="1" min_angle="0" max_angle="0"/>
+   </ray>
+ </sensor>
+<!--  <joint name="base_to_odom" type="continuous">
+  	<parent link="odom" />
+  	<child link="base_link" />
+  	<axis xyz="0 0 1" />
+  	<origin xyz="-0.6 0.0 0.0" />
+  </joint> -->	
+</robot>
