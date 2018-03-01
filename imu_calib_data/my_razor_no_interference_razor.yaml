@@ -1,4 +1,10 @@
-## USB port
+## To be used with the razor_imu_9dof package
+
+## This yaml file contains configuration parameters of
+## Razor IMU when there is almost no external interference.
+
+## USB port. If you are usign the udev rules for auto detect
+## then change the value to /dev/ttyRazor.
 port: /dev/ttyUSB0
 
 

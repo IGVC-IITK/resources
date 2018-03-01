@@ -1,5 +1,5 @@
 # Resources and Test Data
-<p> Test Data is frequently needed to quickly test and modify the algorithms. Simple files like calibration parameters have been kept in this repository while larger files have been hosted on SourceForge and the links are provided. As new data comes in, new links will be added here.</p>
+<p> Calibration data is required for most sensors mounted on the robot and for the relative locations of the sensors on the robot itself. Test Data is frequently needed to quickly test and modify the algorithms. Small files like calibration parameters have been kept in this repository while larger files have been hosted on SourceForge and the links are provided. As new data comes in, new links will be added here.</p>
 
 ## Vision/SLAM Data-sets and Resources
 ### Calibration Data:

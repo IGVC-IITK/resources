@@ -1,8 +1,0 @@
-(Parent frame = laser_front)
-(Child frame = laser_back)
-x = 0.64 m
-y = 0.009 m
-z = 0.043 m
-yaw = 135.5 degrees
-pitch = 0
-roll = 0

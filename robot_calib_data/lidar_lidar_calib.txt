@@ -1,0 +1,12 @@
+(Values obtained using the tf_calibration node)
+
+TF between the two LiDARs:
+
+Parent frame = laser_front
+Child frame = laser_rear
+x = 0.64 m
+y = 0.009 m
+z = 0.043 m
+yaw 	= 135.5 deg
+pitch 	= 0.0 deg
+roll 	= 0.0 deg
