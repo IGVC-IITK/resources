@@ -1,11 +1,8 @@
-## This yaml file contains configuration parameters of
-## Razor IMU when there is almost no external interference.
-
-## USB port. If you are usign the udev rules for auto detect
-## then change the value to /dev/ttyRazor
+## USB port
 port: /dev/ttyUSB0
 
-##### Calibration ####
+
+##### Calibration (for Razor-9DOF) ####
 ### accelerometer
 accel_x_min: -290.0
 accel_x_max: 262.0
