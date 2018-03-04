@@ -1,0 +1,31 @@
+(Use the following parameters in ros0xrobot_minimal.launch)
+
+<param name="CountsPerRev" value="2048" />
+<param name="WheelDiameter" value="254.4" />
+<param name="AxelLength" value="600.0" />
+
+(Make sure that the covariances are set to these values in ros0xRobotNode.cpp)
+
+void Ros0xRobotNode::setPoseCovariance(nav_msgs::Odometry* position)
+{
+  // Publishing this just for the sake of it.
+  // In reality, pose.covariance grows with time and is unbounded.
+  position->pose.covariance[0] = 0.25;
+  position->pose.covariance[7] = 0.25;
+  position->pose.covariance[14] = 0.25;
+  position->pose.covariance[21] = 0.25;
+  position->pose.covariance[28] = 0.25;
+  position->pose.covariance[35] = 0.25;
+}
+
+void Ros0xRobotNode::setTwistCovariance(nav_msgs::Odometry* position)
+{
+  position->twist.covariance[0] = 0.0016;   // assuming ~4% error at 1 m/s
+  position->twist.covariance[7] = 0.0001;   // non-holonomic vehicle dynamics
+  position->twist.covariance[14] = 0.0001;  // ground robot => vz=0 in vehicle frame
+  // Note that twist.angular.x and twist.angular.y cannot be calculated from wheel 
+  // odometry and so the default value (0) can be highly inaccurate (high covariance)
+  position->twist.covariance[21] = 1.0;
+  position->twist.covariance[28] = 1.0;
+  position->twist.covariance[35] = 0.04;    // assuming ~20% error at 1 rad/s
+}

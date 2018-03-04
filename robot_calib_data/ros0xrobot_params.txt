@@ -1,5 +1,0 @@
-(Use the following parameters in ros0xrobot_minimal.launch)
-
-<param name="CountsPerRev" value="2048" />
-<param name="WheelDiameter" value="254.4" />
-<param name="AxelLength" value="600.0" />

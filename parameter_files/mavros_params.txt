@@ -1,0 +1,10 @@
+(Use the following snippet in px4_config.yaml and apm_config.yaml (in the mavros node))
+
+# imu_pub
+imu:
+  frame_id: "base_link"
+  # values from outdoor tests
+  linear_acceleration_stdev: 1.0              # actually it is even higher
+  angular_velocity_stdev: !degrees 11.459155  # 0.2 radians
+  orientation_stdev: 0.01                     # yaw covariance is slightly higher
+  magnetic_stdev: 0.0

@@ -1,0 +1,20 @@
+Indoors (smooth ground):
+Standard Deviations (test 1, test 2)
+Roll	= 0.0095, 0.0050	=> ~0.01	rad
+Pitch	= 0.0032, 0.0111	=> ~0.01	rad
+Yaw		= 0.0183, 0.0145	=> ~0.02	rad
+Omega_x = 0.1035			=> ~0.1		rad/s
+Omega_y = 0.0960			=> ~0.1		rad/s
+Omega_z = 0.0357			=> ~0.05	rad/s
+Acceleration 				=> ~3		m/s^2 (very noisy while moving)
+(standard deviations for omega are as low as ~0.002 when stationary, but we have used the deviations while moving)
+
+Outdoors (high vibration):
+Standard Deviations (test 1, test 2)
+Roll	= 0.0078, 0.0111	=> ~0.01	rad
+Pitch	= 0.0069, 0.0070	=> ~0.01	rad
+Yaw		= 0.0112, 0.0146	=> ~0.015	rad
+Omega_x = 0.2851			=> ~0.25	rad/s
+Omega_y = 0.1926			=> ~0.25	rad/s
+Omega_z = 0.0887			=> ~0.1		rad/s
+Acceleration				=> ~3		m/s^2 (very noisy while moving)

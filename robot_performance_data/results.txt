@@ -1,0 +1,21 @@
+Battery voltage was ~24.2V when these were measured (full operating range: 22.2V-25.2V)
+
+Linear Performance Parameters:
+acceleration and deceleration gains seem to infinite
+(as there is almost instantaneous acceleration change)
+v_max	= 2.10 	m/s
+a_max 	= 0.67	m/s^2
+a_min 	= -0.65 m/s^2
+From the above data, we can calculate:
+Max stopping time ~ 3s
+Max stopping linear displacement ~ 3.3m
+
+Angular Performance Parameters:
+acceleration and deceleration gains seem to infinite
+(as there is almost instantaneous acceleration change)
+aplha_max 	= 2.06 	rad/s^2
+alpha_min 	= -1.90 rad/s^2
+omega_max 	= 6.25 	rad/s
+From the above data, we can calculate:
+Max stopping time ~ 3s
+Max stopping angular displacement ~ 10 rad
